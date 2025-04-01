@@ -1,0 +1,34 @@
+<html>
+   <head>
+      <title>javascript</title>
+      <script type="text/javascript">
+       function selectAll()
+       {
+            let citycheck=document.getElementsByName("citycheck");
+            let citycheckLen=citycheck.length;
+            for(var x=0;x<citycheckLen;x++)
+            {
+              citycheck[x].checked=true;
+            }
+       }
+       function deselectAll()
+       {
+            let citycheck=document.getElementsByName("citycheck");
+            let citycheckLen=citycheck.length;
+            for(var x=0;x<citycheckLen;x++)
+            {
+              citycheck[x].checked=false;
+            }
+       }
+      </script>
+   </head>
+   <body>
+    
+       <input type="button" onclick="selectAll()" value="select All">
+       <input type="button" onclick="deselectAll()" value="un select"> <br><br><br>
+
+       <input type="checkbox" name="citycheck" value="surat">surat<br><br>
+       <input type="checkbox" name="citycheck" value="Mumbai">Mumbai<br><br>
+       <input type="checkbox" name="citycheck" value="Delhi">Delhi<br><br>
+   </body>
+</html>
